@@ -1,9 +1,9 @@
 import React from "react";
 
-function Footer() {
+const Footer = () => {
     return (
         <footer>
-            <img src="" alt="Ico"/>
+            <img src={require("../Images/logo_enver.png")} alt="Ico"/>
             <p>Enver</p>
             <div className="navbar">
                 <p>Support</p>

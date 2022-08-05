@@ -1,6 +1,6 @@
 import React from "react";
 
-function Contact() {
+const Contact = () => {
     return (
       <div className="contact-container">
           <h2>Contact us for the service you want to use</h2>

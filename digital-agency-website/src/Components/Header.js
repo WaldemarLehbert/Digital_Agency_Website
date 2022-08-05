@@ -1,9 +1,9 @@
 import React from "react";
 
-function Header() {
+const Header = () => {
     return (
         <div>
-            <img src="" alt="Ico"/>
+            <img src={require("../Images/logo_enver.png")} alt="Ico"/>
             <p>Enver</p>
             <nav className="navbar">
                 <p>Home</p>

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Hero() {
+const Hero = () => {
     return (
         <div>
             <div className="hero-card">
@@ -9,12 +9,12 @@ function Hero() {
             </div>
             <button className="service-button">
                 <p>Our services</p>
-                <img src="" alt="ico"/>
+                <img src={require("../Images/arrow.png")} alt="ico"/>
             </button>
             <div className="hero-intro">
                 <h2>Why Enver Is The Best Choice?</h2>
                 <p>Watch this one minute video so you understand why you should use our services!</p>
-                <img src="" alt="vid here"/>
+                <img src={require("../Images/image 4.png")} alt="vid here"/>
             </div>
         </div>
     );
