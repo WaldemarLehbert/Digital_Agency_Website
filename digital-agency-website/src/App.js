@@ -8,7 +8,7 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 
 const App = () => {
-  return (
+    return (
     <React.Fragment>
         <Header />
         <Hero />
@@ -17,7 +17,7 @@ const App = () => {
         <Contact />
         <Footer />
     </React.Fragment>
-  );
+    );
 }
 
 export default App;

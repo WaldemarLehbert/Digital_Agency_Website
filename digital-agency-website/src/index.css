@@ -44,13 +44,14 @@ html {
 */
 
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #5454D4;
+  background: #19191B;
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
 code {
@@ -62,16 +63,250 @@ code {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 42px;
 }
 
 .header--logo {
   display: flex;
   align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 39px;
+  color: #FFFFFF;
+}
+
+.header--logo p {
+  margin-left: 8px;
 }
 
 .header--navbar {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 40px;
+  color: #FFFFFF;
+  }
+
+.header--navbar li {
+  list-style-type: none;
+}
+
+.header--navbar a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.header--navbar a:hover {
+  color: #5454D4;
+}
+
+.header--contact-button {
+  background: #121213;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.500211px;
+  width: 157px;
+  height: 44px;
+  padding: 8px 12px;
+
+}
+
+.hero-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero--description {
+  color: #FFFFFF;
+  margin-top: 148px;
+}
+
+.hero--description h1 {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 84px;
+}
+
+.hero--description p {
+  font-size: 21px;
+  margin-top: 24px;
+  font-weight: 400;
+  line-height: 39px;
+  letter-spacing: -0.656526px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.hero--service-button {
+  font-size: 20px;
+  background: #5454D4;
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding: 16px 27px;
+  margin-top: 50px;
+}
+
+.hero--service-button img {
+  margin-left: 8px;
+}
+
+.hero-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #FFFFFF;
+  margin-top: 150px;
+}
+
+.hero-intro h2 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+}
+
+.hero-intro p {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 39px;
+}
+
+.hero-video {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.service-container h2 {
+  color: #FFFFFF;
+  margin-top: 150px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 24px;
+  margin-top: 50px;
+}
+
+.service--item {
+  text-align: center;
+  color: #FFFFFF;
+  padding: 50px 50px;
+}
+
+.service--item h3 {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -0.750316px;
+}
+
+.service--item p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.500211px;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.portfolio-container h2 {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 79px;
+  color: #FFFFFF;
+}
+
+.portfolio--images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.img1 {
+  margin-top: 70px;
+}
+
+.img2 {
+  margin-top: 128px;
+}
+
+.img3 {
+  margin-top: 186px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 355px;
+}
+
+.contact-container h2 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 66px;
+  color: #FFFFFF;
+}
+
+.contact--contact-button {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 29px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #5454D4;
+  border: solid 1px #FFFFFF;
+  border-radius: 4px;
+  width: 200px;
+  height: 60px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  color: #FFFFFF;
+  margin-top: 237px;
+  margin-bottom: 100px;
+}
+
+.footer--logo {
+  display: flex;
   align-items: center;
 }
 
+.footer--logo p {
+  margin-left: 8px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 39px;
+  color: #FFFFFF;
+}
 
+.footer--navbar {
+  display: flex;
+  gap: 40px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer--copy {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 38px;
+  text-align: right;
+  letter-spacing: -0.500211px;
+  color: rgba(255, 255, 255, 0.7);
+}
