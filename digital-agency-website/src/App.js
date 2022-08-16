@@ -10,7 +10,11 @@ import Footer from "./Components/Footer";
 const App = () => {
     return (
     <React.Fragment>
-        <Header />
+        <Header navItem1={"Home"}
+                navItem2={"Services"}
+                navItem3={"Our Project"}
+                navItem4={"About us"}
+        />
         <Hero />
         <Services />
         <Portfolio />

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div id="home" className="header-container">
             <div className="header--logo">
@@ -9,23 +9,21 @@ const Header = () => {
             </div>
             <ul className="header--navbar">
                 <li>
-                    <a href="#home">Home</a>
+                    <a href="#home">{props.navItem1}</a>
                 </li>
                 <li>
-                    <a href="#service">Services</a>
+                    <a href="#service">{props.navItem2}</a>
                 </li>
                 <li>
-                    <a href="#project">Our Project</a>
+                    <a href="#project">{props.navItem3}</a>
                 </li>
                 <li>
-                    <a href="#about">About us</a>
+                    <a href="#about">{props.navItem4}</a>
                 </li>
             </ul>
-            <button className="header--contact-button">
-                <p>Contact us</p>
-            </button>
+            <button className="header--contact-button">Contact us</button>
         </div>
     );
-}
+};
 
 export default Header;
